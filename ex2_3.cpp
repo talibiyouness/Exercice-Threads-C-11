@@ -47,9 +47,9 @@ M3[2][2]=0;
 
 void M3ij(int i){
      for (int j=0;j<3;j++){
-        for (int k=0;k<3;k++){
+        for (int n=0;n<3;n++){
 
-            M3[i][j]=M1[i][k]*M2[k][j]+M3[i][j];
+            M3[i][j]+=M1[i][n]*M2[n][j];
               
               }
                 }
@@ -67,21 +67,15 @@ void CalculM3(){
             }
 
         std::cout << "Resultat: \n" << endl;
-        Affichage();
-        std::cout << endl;
-}
-
-
-    
-    void  Affichage(){
-
-          for(int i = 0; i < 3; i++){
+         for(int i = 0; i < 3; i++){
             for(int j = 0; j < 3; j++){
                 std::cout << M3[i][j] << " | ";
             }
             std::cout <<endl;
             }
-         }    
+}
+
+
 
 
 
