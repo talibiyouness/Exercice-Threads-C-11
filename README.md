@@ -1,4 +1,4 @@
-# Exercice-Threads-C-11 
+# Exercice-Threads-C++11 
  (Université d'Avignon - Master 1 - ILSEN -  CERI) - Prof: Mickaël Rouvier 
 
 # TP1 – Programmation parallèle : CPU
